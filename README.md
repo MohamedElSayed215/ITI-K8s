@@ -199,13 +199,4 @@ kubernetes-labs/
 └── README.md
 ```
 
----
 
-## 👤 Author
-
-**[Your Name]**
-- GitHub: [@yourusername](https://github.com/yourusername)
-
----
-
-<p align="center">Made with ❤️ and lots of <code>kubectl apply</code></p>
