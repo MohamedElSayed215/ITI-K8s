@@ -160,7 +160,7 @@ kind: Deployment
 metadata:
   name: downward-deployment
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: downward
@@ -169,35 +169,36 @@ spec:
       labels:
         app: downward
     spec:
-      initContainers:
-        - name: init-html
-          image: busybox
-          command:
-            - sh
-            - -c
-            - |
-              echo "<h1>Pod Name: $(POD_NAME)</h1><h2>Pod IP: $(POD_IP)</h2>" > /html/index.html
-          env:
-            - name: POD_NAME
-              valueFrom:
-                fieldRef:
-                  fieldPath: metadata.name
-            - name: POD_IP
-              valueFrom:
-                fieldRef:
-                  fieldPath: status.podIP
-          volumeMounts:
-            - name: html
-              mountPath: /html
-      containers:
-        - name: nginx
-          image: nginx:alpine
-          volumeMounts:
-            - name: html
-              mountPath: /usr/share/nginx/html
       volumes:
-        - name: html
-          emptyDir: {}
+      - name: podinfo
+        downwardAPI:
+          items:
+          - path: "pod_name"
+            fieldRef:
+              fieldPath: metadata.name
+
+      containers:
+      - name: nginx
+        image: nginx
+
+        volumeMounts:
+        - name: podinfo
+          mountPath: /etc/podinfo
+
+        env:
+        - name: POD_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
+
+        command: ["/bin/sh", "-c"]
+        args:
+        - |
+          POD_NAME=$(cat /etc/podinfo/pod_name)
+          echo "<h1>Pod Name: $POD_NAME</h1>" > /usr/share/nginx/html/index.html
+          echo "<h2>Pod IP: $POD_IP</h2>" >> /usr/share/nginx/html/index.html
+          nginx -g 'daemon off;'
+
 ```
 
 ---
