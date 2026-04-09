@@ -63,6 +63,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl apply -f https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml
 ```
 ![](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab1/screenshots/ip.jpg)
+
+
 **e.** Join the second server as a worker node:
 ```bash
 # Run the kubeadm join command printed after kubeadm init, e.g.:
