@@ -1,0 +1,21 @@
+# europe-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: europe
+  namespace: world
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: europe
+  template:
+    metadata:
+      labels:
+        app: europe
+    spec:
+      containers:
+        - name: europe
+          image: husseingalal/europe:latest
+          ports:
+            - containerPort: 80
