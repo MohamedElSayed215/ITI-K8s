@@ -127,7 +127,7 @@ kubectl apply -f deployment.yaml
 kubectl get pods -n iti-46
 kubectl exec -it <pod-name> -n iti-46 -- env | grep FOO
 ```
-
+![](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab2/screenshots/deployments.jpg)
 ---
 
 ## 📚 Key Concepts
@@ -147,9 +147,9 @@ kubectl exec -it <pod-name> -n iti-46 -- env | grep FOO
 
 | Step | Screenshot |
 |------|------------|
-| `kubectl config get-contexts` showing `iti-context` | *(add screenshot)* |
-| `kubectl hostnames` plugin output | *(add screenshot)* |
-| Pods running with `FOO=ITI` env variable | *(add screenshot)* |
+| `kubectl config get-contexts` showing `iti-context` | ![](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab2/screenshots/iti-context.jpg)|
+| `kubectl hostnames` plugin output |![](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab2/screenshots/k8s-plugin.jpg) |
+| Pods running with `FOO=ITI` env variable | ![](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab2/screenshots/env.jpg) |
 
 ---
 
