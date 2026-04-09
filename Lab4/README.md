@@ -288,7 +288,7 @@ kubectl exec pod1 -- cat /etc/birke/tree
 
 | Step | Screenshot |
 |------|------------|
-| `kubectl get pv,pvc` — bound status | *(add screenshot)* |
+| `kubectl get pv,pvc` — bound status | *[(add screenshot](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab4/screenshots/pvc-pv.jpg))* |
 | nginx serving `index.html` with your name | *(add screenshot)* |
 | `podIP` and `podName` displayed in browser | *(add screenshot)* |
 | `kubectl exec pod1 -- env \| grep TREE1` | *(add screenshot)* |
