@@ -62,7 +62,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml
 ```
-
+![](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab1/screenshots/ip.jpg)
 **e.** Join the second server as a worker node:
 ```bash
 # Run the kubeadm join command printed after kubeadm init, e.g.:
@@ -73,7 +73,7 @@ sudo kubeadm join <CONTROL_PLANE_IP>:6443 --token <token> --discovery-token-ca-c
 ```bash
 kubectl get nodes
 ```
-
+![](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab1/screenshots/get-node.jpg)
 ---
 
 ## 🚀 Task 2 — Run a Deployment *(10 pts)*
@@ -83,7 +83,7 @@ Apply the deployment on the cluster using `kubectl`:
 kubectl apply -f deployment.yaml
 kubectl get pods -o wide
 ```
-
+![](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab1/screenshots/deployments.jpg)
 ---
 
 ## ⭐ Task 3 — Bonus: k3s *(5 pts)*
@@ -122,15 +122,11 @@ sudo k3s kubectl get nodes
 
 ---
 
-## 📸 Screenshots
-
-> Place your screenshots in a `screenshots/` folder and update the paths below.
+## 📸 Screenshot
 
 | Step | Screenshot |
 |------|------------|
-| `kubectl get nodes` — both nodes Ready | *(add screenshot)* |
-| Deployment running on cluster | *(add screenshot)* |
-| k3s nodes up and running (bonus) | *(add screenshot)* |
+| k3s nodes up and running (bonus) | ![](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab1/screenshots/get-node-k3s.jpg) |
 
 ---
 
