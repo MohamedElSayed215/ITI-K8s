@@ -288,11 +288,10 @@ kubectl exec pod1 -- cat /etc/birke/tree
 
 | Step | Screenshot |
 |------|------------|
-| `kubectl get pv,pvc` — bound status | *[(add screenshot](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab4/screenshots/pvc-pv.jpg))* |
-| nginx serving `index.html` with your name | *(add screenshot)* |
-| `podIP` and `podName` displayed in browser | *(add screenshot)* |
-| `kubectl exec pod1 -- env \| grep TREE1` | *(add screenshot)* |
-| `kubectl exec pod1 -- ls /etc/birke/` | *(add screenshot)* |
+| `kubectl get pv,pvc` — bound status | *[(screenshot](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab4/screenshots/pvc-pv.jpg))* |
+| nginx serving `index.html` with your name | *([screenshot](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab4/screenshots/share-index.jpg))* |
+| `podIP` and `podName` displayed in browser | *([screenshot](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab4/screenshots/downward-deploy.jpg))* |
+| `kubectl exec pod1 -- env \| grep TREE1 && kubectl exec pod1 -- ls /etc/birke/` | *([screenshot](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab4/screenshots/config.jpg))* |
 
 ---
 
