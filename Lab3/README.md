@@ -43,9 +43,9 @@
 
 ### Steps
 
-**a.** Create a namespace called `iti-45`:
+**a.** Create a namespace called `iti-46`:
 ```bash
-kubectl create namespace iti-45
+kubectl create namespace iti-46
 ```
 
 **b.** Create 2 deployments in the `world` namespace:
@@ -222,11 +222,8 @@ curl http://world.universe.mine/africa/
 
 | Step | Screenshot |
 |------|------------|
-| Deployments running in `world` namespace | *(add screenshot)* |
-| Services exposed — `kubectl get svc -n world` | *(add screenshot)* |
-| Ingress created — `kubectl get ingress -n world` | *(add screenshot)* |
-| `curl` response from `/europe/` route | *(add screenshot)* |
-| `curl` response from `/africa/` route | *(add screenshot)* |
+| Objects running in `world` namespace | ![](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab3/screenshots/part2.jpg) |
+| `curl` response from `/europe/` & `/africa/` routes | ![](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab3/screenshots/test-part2.jpg) |
 
 ---
 
