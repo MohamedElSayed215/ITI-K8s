@@ -153,21 +153,6 @@
 ### Key Concepts
 `PersistentVolume` · `PersistentVolumeClaim` · `hostPath` · Downward API · `ConfigMap` · Volume Mounts · Environment Variables
 
----
-
-## 📸 Screenshots
-
-> Add your lab screenshots here to document your work.
-
-| Lab | Description | Screenshot |
-|-----|-------------|------------|
-| Lab 1 | Nodes ready after kubeadm setup | *(add screenshot)* |
-| Lab 1 | k3s cluster nodes up and running | *(add screenshot)* |
-| Lab 2 | iti-context in kubectl config | *(add screenshot)* |
-| Lab 2 | kubectl-hostnames plugin output | *(add screenshot)* |
-| Lab 3 | Ingress routing to /europe and /africa | *(add screenshot)* |
-| Lab 4 | PVC mounted, index.html served | *(add screenshot)* |
-| Lab 4 | ConfigMap keys available in pod | *(add screenshot)* |
 
 ---
 
