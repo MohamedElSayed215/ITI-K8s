@@ -128,7 +128,7 @@ sudo k3s kubectl get nodes
 
 | Step | Screenshot |
 |------|------------|
-| k3s status | *(https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab1/screenshots/k3s.jpg)* |
+| k3s status | ![k3s status](https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab1/screenshots/k3s.jpg) |
 | k3s nodes up and running (bonus) | *(https://github.com/MohamedElSayed215/ITI-K8s/blob/main/Lab1/screenshots/get-node-k3s.jpg)* |
 
 ---
